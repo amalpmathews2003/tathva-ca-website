@@ -45,11 +45,10 @@ body{
 .container{
   width: 90%;
   margin: 0 auto;
- 
-  background: transparent;
+   background: transparent;
 }
 
-/*flex*/
+/*-----------------------------flex*/
 .row{
   display: flex;
   justify-content: space-between;
