@@ -8,7 +8,7 @@ const Nav= ()=>{
            <div className=" row">
            <h3><a className="inter-r">Sign In</a></h3>
           <button className="nav-toggle">
-                   <img src={toggle} />
+                   <img src={toggle} alt="" />
                </button>
                </div>
            </div>
