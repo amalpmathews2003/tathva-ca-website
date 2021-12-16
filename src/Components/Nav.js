@@ -5,7 +5,7 @@ const Nav= ()=>{
     return(
       <div className="nav container row">
            <img src={tathvaLogo} alt="tathva-logo" className="nav-logo"/>
-           <div className=" row">
+           <div className=" row btn-white">
            <h3><a className="inter-r">Sign In</a></h3>
           <button className="nav-toggle">
                    <img src={toggle} alt="" />
