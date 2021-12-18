@@ -1,0 +1,33 @@
+.page-2 {
+  height: 60vh;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    rgba(200, 74, 244, 0) 0%,
+    #2ff3ff 61.98%,
+    #ee2fff 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10 */
+  position: relative;
+  flex-direction: column;
+}
+.card-container {
+  display: flex;
+}
+.title-page-2 {
+  display: flex;
+  width: 90%;
+}
+.clash-title {
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 100%;
+  /* identical to box height, or 48px */
+
+  color: #ffffff;
+}

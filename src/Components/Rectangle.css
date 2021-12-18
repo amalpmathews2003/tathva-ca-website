@@ -1,0 +1,13 @@
+.card {
+  border: 10px;
+  background-color: red;
+  margin: 10px;
+  position: relative;
+}
+.card-bg {
+  position: absolute;
+  background-color: saddlebrown;
+}
+.clash {
+  font-family: "Clash Display", sans-serif;
+}

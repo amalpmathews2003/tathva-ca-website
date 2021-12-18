@@ -1,0 +1,79 @@
+.page-5 {
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  border-radius: 0.8rem;
+  background: #151515;
+}
+.vic-icon-container {
+  flex-basis: 20%;
+  /* background: red; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.vic-icon {
+  width: 54%;
+}
+.text-container {
+  flex-basis: 53%;
+  /* background: pink; */
+  color: white;
+}
+.btn {
+  background: linear-gradient(
+    298.74deg,
+    #e91dfb 7.67%,
+    #632dff 28.63%,
+    #359eff 61.36%,
+    #1bffe4 83.87%
+  );
+  border-radius: 51px;
+  border: 0;
+  line-height: 1;
+  padding: 1rem 1.9rem;
+  color: white;
+  width: 50%;
+  height: 29%;
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.1rem;
+}
+.btn-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 26%;
+}
+.text-u {
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.3rem;
+  line-height: 100%;
+  color: #ffffff;
+  text-shadow: 0px 0.19rem 0.45rem rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.text-l {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.75);
+  display: inline-block;
+}
+.text-l-container {
+  width: 50%;
+}

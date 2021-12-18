@@ -1,0 +1,141 @@
+.polygon {
+  position: absolute;
+  width: 39.9rem;
+  height: 39.9rem;
+  left: -2.8rem;
+  top: -0.35rem;
+  /* background-color: red; */
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.poly-i {
+  width: 87%;
+  height: 87%;
+  object-fit: cover;
+}
+.page-3 {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.page-3-info {
+  /* display: flex; */
+  position: absolute;
+  height: 73vh;
+  width: 70vw;
+  left: 30vw;
+  top: 27vh;
+}
+.prize-container {
+  margin-left: 1vw;
+  width: 68vw;
+}
+.prize-upper {
+  width: 68vw;
+  height: auto;
+  margin-left: 20vw;
+}
+.prize-lower {
+  width: 68vw;
+  height: auto;
+  /* padding-left: 10vw; */
+  margin-left: 33vw;
+}
+.prize-1 {
+  margin-right: 1.6rem;
+}
+.prize-1,
+.prize-2,
+.prize-3 {
+  width: 33%;
+}
+.other-info-page-3 {
+  background: linear-gradient(180deg, rgba(182, 103, 35, 0) 0%, #b89936 100%);
+  /* background-color: red; */
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  /* background-image: url("/src/"); */
+}
+.rectangle {
+  object-fit: cover;
+  width: 100%;
+}
+.other-info-content-page-3 {
+  width: 50%;
+  /* background-color: aqua; */
+  /* display: flex; */
+}
+.c-1,
+.c-2,
+.c-3 {
+  /* flex-basis: 33%; */
+  display: inline-block;
+  width: 23%;
+  margin-left: 6.43rem;
+}
+.c3 {
+  margin-top: 1.3rem;
+}
+.content-info-desc {
+  width: 50%;
+  /* background-color: rosybrown; */
+}
+.money {
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 82%;
+  /* identical to box height, or 30px */
+
+  color: #ffffff;
+  margin-top: 0.9rem;
+}
+.rank {
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 82%;
+  /* identical to box height, or 15px */
+  margin: 0px;
+  color: #ffc738;
+  display: inline-block;
+}
+.desc {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.68rem;
+  margin-top: 0px;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+.text {
+  /* font-family: Clash Display;
+   */
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 82%;
+  color: rgba(255, 255, 255, 0.95);
+  display: inline-block;
+}
+.box {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  left: 17rem;
+  top: 20rem;
+  z-index: 100;
+}
