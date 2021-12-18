@@ -5,8 +5,8 @@ const Nav= ()=>{
     return(
       <div className="nav container row">
            <img src={tathvaLogo} alt="tathva-logo" className="nav-logo"/>
-           <div className=" row btn-white">
-           <h3><a className="inter-r">Sign In</a></h3>
+           <div className=" row nav-btn">
+           <h3><a className="inter-r txt-black">Sign In</a></h3>
           <button className="nav-toggle">
                    <img src={toggle} alt="" />
                </button>
@@ -16,4 +16,4 @@ const Nav= ()=>{
           
     )
 }
-export default Nav;
+export {Nav}

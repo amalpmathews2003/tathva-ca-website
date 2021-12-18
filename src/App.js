@@ -1,16 +1,12 @@
 import './App.css';
-import Nav from "./Components/Nav"
-import Hero from "./Components/Hero"
-import Card from"./card"
-
+import {Home} from "./Components/Home"
+import {Route,Link} from "react-router-dom"
+import {Dashboard} from "./Components/Dashboard"
 function App() {
   return (
     <div className="App">
-      <Nav/>
-     <Hero/>
-     <Card/>
-    </div>
-  );
+<Dashboard/></div>
+  )
 }
 
 export default App;

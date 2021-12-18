@@ -4,10 +4,17 @@
   --circle-pri: linear-gradient(315deg, #CC01FF 0%, #7D3EFE 44.79%, #37E7FF 100%);
   --lines:linear-gradient(90deg, #FF68F9 0%, #3F88FF 22.4%, #52F5FF 53.12%, #6486FF 76.04%, #FD8BFF 100%);
 }
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Inter:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
 
 *{
   box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style-type: none;
 }
 button, input[type="submit"], input[type="reset"] {
 	background: none;
@@ -18,20 +25,26 @@ button, input[type="submit"], input[type="reset"] {
 	cursor: pointer;
 	outline: inherit;
 }
-a, a:active,a:hover,a:focus{
-  text-decoration: none;
-  color: inherit;
-}
+
 body{
+  overflow-x: clip;
   background-color: #000;
+  background-size: 100px 100px;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   color:#FFFF;
   margin: 0;
   padding: 0;
 }
 /*----------------------------------------------------------------------------------------Nav-bar*/
 .nav{
-  height: 6em;
-  position: fixed;
+  height:3em;
+  position: sticky;
+
   
   
 }
@@ -42,6 +55,7 @@ body{
 }
 .nav-toggle{
   margin-left:min(30px,10vw);
+  max-width: 1rem;
 }
 
 /*----------------------------------------------------------------------------------------Hero*/
@@ -59,6 +73,8 @@ body{
   margin-top: 20px;
   max-height: 540px;
   width: auto;
+  border: 1px solid white;
+  
 }
 
 .hero-img-container{
@@ -75,7 +91,6 @@ padding: 2em 0;
 
 .hero-p{
 font-size: 1.2rem;
-opacity: 0.6;
 }
 .stats{
   width: 300px;
@@ -84,24 +99,111 @@ opacity: 0.6;
 .stats-p{
   font-size: 1rem;
 }
-/*-------------------------------------------------------------------------------------------cards*/
-.card{
+/*--------------------------------------------------------------------------------------------------cards*/
+/*--------------------------------------------------------------------------------------------------sponsors*/
+
+.sponsors{
+  width: 90%;
+  margin: 2em auto;
+}
+.sponsor-img{
+  opacity: 0.2;
+}
+
+
+/*----------------------------------------------------------------------------------------footer*/
+.footer{
+  width: 100%;
+  background:#151515 ;
+  position: absolute;
+  padding: 1em 5%;
   
-  max-width: 350px;
-  border:1px solid #FFFF;
-  padding: 2rem;
-  box-shadow: 5px 5px  linear-gradient(270deg, #D61AF4 0%, #5F31E4 52.6%, #00D1FF 100%);;
 }
-.card img{
-  width: 60px;
-  border-radius: 50%;
-  padding: 1em;
-  background: var(--circle-pri);
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+.footer-logo{
+  max-width:100px;
 }
-.card-container{
-border:1px solid white;
-padding: 10%;}
+.footer-links{
+  margin-right: 10%;
+}
+/*---------------------------------------------------------------------------------------------dashboard*/
+.dashboard{
+  display: flex;
+  justify-content:center;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #151515;
+  width: auto;
+  max-width:800px;
+}
+.db-elements{
+  padding: 0 2em;
+}
+.heading{
+  border-bottom: 1px solid #2C2C2C;
+  padding:1em 2em;
+}
+.side-nav{
+  width: 300px;
+  padding:2em;
+  margin: 0 auto;
+  border-right:1px solid #2C2C2C;
+  text-align: center;
+}
+.main-area{
+  width: 100%;
+}
+.ur-referals{
+  padding:2em 0;
+}
+.referals h2{
+  border-bottom: 1px solid #2C2C2C;
+  padding: 1rem;
+}
+.point-table{
+  width: 250px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+}
+.point-table ul li{
+  line-height: 0;
+  }
+.referal-list{
+  width: 100%;
+  min-height: 6em;
+  border:2px dashed #2C2C2C;
+  margin: 0 auto;
+}
+.guide{
+ /* display: none;*/
+}
+.guide-tab{
+ width: 100%;
+}
+.guide-toggle img{
+  max-width:1rem;
+
+}
+
+.poster-card{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  margin-top:1rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.feedback-txt{
+  min-width: 200px;
+  width: auto;
+  min-height: 100px;
+background: rgba(255, 255, 255, 0.08);
+border-radius: 10px;
+color: white;
+}
+
 
 
 /*------utilities-----*/
@@ -112,26 +214,41 @@ padding: 10%;}
    background: transparent;
 }
 .btn{
-  padding: .25rem;
+  padding: 1rem;
   border-radius:2em;
   border:2px solid white ;
+  margin: 1em;
+  font-size: 1rem;
 }
 .btn-pri{
-padding: .25rem;
+padding: 1rem;
 border-radius:2em;
+margin: 1em;
+background:var(--primary);
+font-size: 1rem;
 
-background:var(--primary)
 }
 .btn-sec{
-padding:.25rem;
+padding:1rem;
 border-radius:2em;
-background-color:var(--secondary)
+background-color:var(--secondary);
+margin: 1em;
+font-size: 1rem;
+
+
 }
-.btn-white{
-  padding: .25rem;
-border-radius:2em;
+.nav-btn{
+ border-radius: 2rem;
+ font-size: 0.5rem;
+ padding: 0 0.5rem;
 background-color: #FFFF;
+
+
 }
+.dim{
+  opacity: 0.5;
+}
+
 /*-----------------------------flex*/
 .row{
   display: flex;
@@ -144,6 +261,15 @@ background-color: #FFFF;
   justify-content: center;
   align-items: center;
 }
+.txt-white{
+  color: #FFFF;
+}
+.txt-black{
+  color: #000;
+}
+
+
+
 /*---------------------------------------------------------------------------------------Fonts*/
 .inter-r{
   font-family: 'Inter', sans-serif;
@@ -161,3 +287,21 @@ font-weight: 600;
   font-family: 'Exo 2', sans-serif;
   font-weight: 700;
 }
+.clash-el{
+  font-family: 'Clash Display', sans-serif;
+font-weight:200;}
+.clash-l{
+  font-family: 'Clash Display', sans-serif;
+font-weight:300;}
+.clash-r{
+  font-family: 'Clash Display', sans-serif;
+font-weight:400;}
+.clash-m{
+  font-family: 'Clash Display', sans-serif;
+font-weight:500;}
+.clash-sb{
+  font-family: 'Clash Display', sans-serif;
+font-weight:600;}
+.clash-b{
+  font-family: 'Clash Display', sans-serif;
+font-weight:700;}
