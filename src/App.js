@@ -11,11 +11,11 @@ function App() {
     <>
     <link href="https://api.fontshare.com/css?f[]=clash-display@200,300,400,500,600,700&display=swap" rel="stylesheet"></link>
     {/* <Page_2/> */}
-    <Page_3/>
+    {/* <Page_3/>
     <Page_4/>
-    <Page_5/>
+    <Page_5/> */}
     {/* <Form/> */}
-    {/* <Form2/> */}
+    <Form2/>
     </>
   );
 }

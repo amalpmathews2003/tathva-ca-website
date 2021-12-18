@@ -5,12 +5,12 @@
 }
 body {
   overflow-x: clip;
-  /* background-color: #000;
+  background-color: #000;
   background-size: 100px 100px;
   background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.06) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px); */
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
 }
