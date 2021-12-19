@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Form.css'
 import message from './message.png'
 import hand from './hand.png'
@@ -8,17 +8,16 @@ import twitter from './insta.png'
 import earth from './earth.png'
 import phone from './phone.png'
 
-
 const Form = () => {
     const initialValues = { username: '', email: '', message: ''};
     const [formValues, setFormValues] = useState(initialValues);
 
-    const handleChange = (e) =>{
-        // console.log(e.target);
-        const { name, value} = e.target;
-        setFormValues({...formValues, [name]:value });
-        console.log(formValues);
-    }
+    // const handleChange = (e) =>{
+    //     // console.log(e.target);
+    //     const { name, value} = e.target;
+    //     setFormValues({...formValues, [name]:value });
+    //     console.log(formValues);
+    // }
 
     return (
         <>
