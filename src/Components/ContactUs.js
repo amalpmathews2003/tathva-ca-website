@@ -1,24 +1,97 @@
-import React from "react"
-import {Footer} from "./Footer"
-import {Nav} from "./Nav"
-import brGrad from "./images/br-grad.png"
-import contact from "./images/contact.png"
+import React, { useState } from 'react'
+import message from './images/message.png'
+import hand from './images/hand.png'
+import insta from './images/insta.png'
+import facebook from './images/facebook.png'
+import twitter from './images/insta.png'
+import earth from './images/earth.png'
+import phone from './images/phone.png'
 
-function ContactUs(){
-    return(<div>
-        <Nav/>
-<div className="bg-gradiant"><h1><img src={contact}/> Contact Us</h1></div>
-<div className="contact-us">
-        <div className="contacts">
 
-        </div>
-        <div className="message">
+const ContactUs = () => {
+    const initialValues = { username: '', email: '', message: ''};
+    const [formValues, setFormValues] = useState(initialValues);
 
-        </div>
-</div>
-<Footer/>
-</div>
+    const handleChange = (e) =>{
+        // console.log(e.target);
+        const { name, value} = e.target;
+        setFormValues({...formValues, [name]:value });
+        console.log(formValues);
+    }
 
+    return (
+        <>
+            <div className="form-container">
+            <div className="info-left">
+                <div className="git">
+                <img src={hand} alt="" className='hand'/>
+                    <h1>Get in touch</h1>
+                    <div className="contact">
+                        <div className="phone-container">
+                            <img src={phone} alt="" />
+                        </div>
+                        <div className="contact-details"> 
+                        <h2>John Doe</h2>
+                        <p className='phone-no'>+91 12345 67890</p>
+                    </div>
+                    </div>
+                    <div className="contact">
+                    <div className="phone-container">
+                    <img src={phone} alt="" />
+                    </div>
+                    <div className="contact-details"> 
+                        <h2>John Doe</h2>
+                        <p className='phone-no'>+91 12345 67890</p>
+                    </div>
+                    </div>
+                    <div className="contact">
+                    <div className="phone-container">
+                    <img src={phone} alt="" />
+                    </div>
+                    <div className="contact-details"> 
+                        <h2>Email</h2>
+                        <p className='phone-no'>tathva@nitc.ac.in</p>
+                    </div>
+                    </div>
+                </div>
+                <div className="social">
+                    <img src={earth} alt="" />
+                    <h1>Social</h1>
+                    <div className="s-media-container"> 
+                    <div className="s-media">
+                        <img src={insta} alt="" />
+                    </div>
+                    <div className="s-media">
+                        <img src={facebook} alt="" />
+                    </div>
+                    <div className="s-media">
+                        <img src={twitter} alt="" />
+                    </div>
+                    </div>
+                </div>
+            </div>
+                <form action="" className='form'>
+                    <div className="form-header">
+                        <img src={message} alt="message-image" className='m-icon'/>
+                        <h1 className='form-header-text'>Message</h1>
+                    </div>
+                    <div className="field"> 
+                    <label className='label'>Name</label>
+                    <input className='input' type="text" name='username' placeholder='Enter your name' value={ formValues.username} onChange={handleChange}/>
+                    </div>
+                    <div className="field"> 
+                    <label className='label'  >Email</label>
+                    <input className='input' type="email" name='email' placeholder='Enter your email' value={ formValues.email} onChange={handleChange}/>
+                    </div>
+                    <div className="field"> 
+                    <label className='label'>Message</label>
+                    <input className='m-input' type="text" name='message' placeholder='Enter your message' value={ formValues.message} onChange={handleChange}/>
+                    </div>
+                    <button className='form-button'>Submit</button>
+                </form>
+            </div>
+        </>
     )
 }
-export { ContactUs }
+
+export{ContactUs}

@@ -42,4 +42,24 @@ const PosterData=[{
   heading:"Lecture 1",
   writeup:"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non ..."
 }]
-export{SponsorData,PosterData}
+const cardData= [
+  {
+      id:1,
+      img:'card-1.png', 
+      title:'Share',
+      info:'Share all posters and links on your social media and groups',
+  },
+  {
+      id:1,
+      img:'card-2.png', 
+      title:'Notices',
+      info:'Put up posters we send you on your notice boards',
+  },
+  {
+      id:1,
+      img:'card-3.png', 
+      title:'Encourage',
+      info:'Encourage students of your college to participate in Tathva',
+  },
+];
+export{SponsorData,PosterData,cardData}

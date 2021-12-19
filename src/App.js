@@ -1,11 +1,13 @@
 import './App.css';
 import {Home} from "./Components/Home"
-import {Route,Link} from "react-router-dom"
 import {Dashboard} from "./Components/Dashboard"
+import {ContactUs} from "./Components/ContactUs"
+import {Register} from "./Components/Register"
+import { Referals } from './Components/Referals';
 function App() {
   return (
     <div className="App">
-<Dashboard/></div>
+<Register/></div>
   )
 }
 

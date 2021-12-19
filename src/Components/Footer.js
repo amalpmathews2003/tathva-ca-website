@@ -10,19 +10,19 @@ const Footer =()=>{
             <div className="row">
                 <img className="footer-logo" src={Logo} alt="logo"/>
                 <div className="footer-links row">
-                    <ul className="hot-links">
+                    <ul className="hot-links inter-r">
                         <li><p>Site</p></li>
                         <li><a>Sign in</a></li>
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Contact</a></li>
                     </ul>
-                    <ul className="social">
+                    <ul className="social inter-r">
                         <li><p>Social</p></li>
-                        <li ><a> <p> <img src={Insta}/> Instagram</p></a></li>
-                        <li ><a ><p><img src={Fb}/>  Facebook</p></a></li>
-                        <li><a> <p> <img src={Twiter}/> Twitter</p></a></li>
-                    </ul>
+                        <li ><a> <p> <img src={Insta}/><span className="social-txt">Instagram</span> </p></a></li>
+                        <li ><a ><p><img src={Fb}/> <span className="social-txt"> Facebook </span></p></a></li>
+                        <li><a> <p> <img src={Twiter}/> <span className="social-txt">Twitter </span></p></a></li>
+                    </ul> 
                 </div>
             </div>
             <div className="row">
