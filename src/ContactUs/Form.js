@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState , useEffect} from 'react'
 import './Form.css'
 import message from './message.png'
 import hand from './hand.png'
@@ -8,24 +8,34 @@ import twitter from './insta.png'
 import earth from './earth.png'
 import phone from './phone.png'
 
+
 const Form = () => {
     const initialValues = { username: '', email: '', message: ''};
     const [formValues, setFormValues] = useState(initialValues);
 
-    // const handleChange = (e) =>{
-    //     // console.log(e.target);
-    //     const { name, value} = e.target;
-    //     setFormValues({...formValues, [name]:value });
-    //     console.log(formValues);
-    // }
+    useEffect(
+        () => {
+            console.log(formValues);
+        }
+        ,[formValues]
+    )
+
+    const handleChange = (e) =>{
+        // console.log(e.target);
+        const { name, value} = e.target;
+        setFormValues({...formValues, [name]:value });
+
+    }
 
     return (
         <>
             <div className="form-container">
             <div className="info-left">
                 <div className="git">
-                <img src={hand} alt="" className='hand'/>
+                <div className="info-left-header-container"> 
+                <img src={hand} alt="" className='m-icon'/>
                     <h1>Get in touch</h1>
+                </div>
                     <div className="contact">
                         <div className="phone-container">
                             <img src={phone} alt="" />
@@ -55,8 +65,10 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="social">
-                    <img src={earth} alt="" />
+                <div className="info-left-header-container"> 
+                    <img src={earth} alt="" className='m-icon' />
                     <h1>Social</h1>
+                </div>
                     <div className="s-media-container"> 
                     <div className="s-media">
                         <img src={insta} alt="" />
