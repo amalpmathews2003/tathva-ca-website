@@ -14,8 +14,8 @@ function App() {
     {/* <Page_3/>
     <Page_4/>
     <Page_5/> */}
-    {/* <Form/> */}
-    <Form2/>
+    <Form/>
+    {/* <Form2/> */}
     </>
   );
 }
