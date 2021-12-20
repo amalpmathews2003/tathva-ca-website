@@ -24,8 +24,10 @@ const ContactUs = () => {
             <div className="form-container">
             <div className="info-left">
                 <div className="git">
-                <img src={hand} alt="" className='hand'/>
-                    <h1>Get in touch</h1>
+                <div className="info-left-header-container"> 
+                <img src={hand} alt="" className='m-icon'/>
+                    <h1 className='info-left-header-text'>Get in touch</h1>
+                </div>
                     <div className="contact">
                         <div className="phone-container">
                             <img src={phone} alt="" />
@@ -55,8 +57,10 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className="social">
-                    <img src={earth} alt="" />
-                    <h1>Social</h1>
+                <div className="info-left-header-container"> 
+                    <img src={earth} alt="" className='m-icon' />
+                    <h1 className='info-left-header-text'>Social</h1>
+                </div>
                     <div className="s-media-container"> 
                     <div className="s-media">
                         <img src={insta} alt="" />
@@ -85,7 +89,7 @@ const ContactUs = () => {
                     </div>
                     <div className="field"> 
                     <label className='label'>Message</label>
-                    <input className='m-input' type="text" name='message' placeholder='Enter your message' value={ formValues.message} onChange={handleChange}/>
+                    <input className='m-input' type="textarea" name='message' placeholder='Enter your message' value={ formValues.message} onChange={handleChange}/>
                     </div>
                     <button className='form-button'>Submit</button>
                 </form>
