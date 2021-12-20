@@ -18,6 +18,7 @@ function Home(){
             <Sponsors/>
              <Page2/>
              <Page3/>
+             <Page4/>
             <RUReady/>
             <Footer/>
 

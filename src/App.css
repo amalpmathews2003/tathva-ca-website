@@ -97,7 +97,6 @@ body {
 .hero-img {
   margin-top: 20px;
   width: 100%;
-  border: 1px solid white;
 }
 
 .hero-img-container {
@@ -184,7 +183,10 @@ body {
   height: auto;
 }
 .prize-container {
-  margin-left: 1vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   width: 68vw;
 }
 .prize-upper {

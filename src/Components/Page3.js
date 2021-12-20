@@ -10,9 +10,7 @@ const Page3 = () => {
            
     <div className="page-3 row">
         <div>
-    
-   
-      <div className="polygon">
+             <div className="polygon">
       <img src={poly} alt="poly-i" className='poly-i'/>
       <p className='text clash-sb'>Benefits</p>
 
