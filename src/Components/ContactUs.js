@@ -31,7 +31,7 @@ const ContactUs = () => {
                             <img src={phone} alt="" />
                         </div>
                         <div className="contact-details"> 
-                        <h2>John Doe</h2>
+                        <h2 className='contact-detail-name'>John Doe</h2>
                         <p className='phone-no'>+91 12345 67890</p>
                     </div>
                     </div>
@@ -40,7 +40,7 @@ const ContactUs = () => {
                     <img src={phone} alt="" />
                     </div>
                     <div className="contact-details"> 
-                        <h2>John Doe</h2>
+                        <h2 className='contact-detail-name'>John Doe</h2>
                         <p className='phone-no'>+91 12345 67890</p>
                     </div>
                     </div>
@@ -49,7 +49,7 @@ const ContactUs = () => {
                     <img src={phone} alt="" />
                     </div>
                     <div className="contact-details"> 
-                        <h2>Email</h2>
+                        <h2 className='contact-detail-name'>Email</h2>
                         <p className='phone-no'>tathva@nitc.ac.in</p>
                     </div>
                     </div>

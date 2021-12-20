@@ -352,34 +352,48 @@ body {
   background: #151515;
   width: 60vw;
   height: 75vh;
-  margin: 0 auto;
   display: flex;
   border-radius: 0.8rem;
 }
+.contact-detail-name {
+  display: block;
+  margin: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 100%;
+  font-family: "Inter", sans-serif;
+}
 .form-header-text {
+  font-family: "Clash Display", sans-serif;
+  display: inline;
   color: white;
+  margin: 0px;
+  margin-left: 0px;
+  margin-left: 0px;
+  margin-left: 1rem;
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
   line-height: 121%;
-  font-family: "Clash Display", sans-serif;
 }
 .form {
   height: 100%;
   width: 50%;
   padding-left: 3rem;
+  margin-top: 1.8rem;
 }
 .form-header {
   width: 100%;
-  height: 15%;
+  height: 7%;
   display: flex;
   align-content: center;
+  margin-bottom: 1.5rem;
 }
 .label {
   font-family: "Inter", sans-serif;
   color: white;
   display: block;
-  /* margin-down: 1rem; */
   margin-bottom: 0.5rem;
   font-style: normal;
   font-weight: normal;
@@ -389,11 +403,11 @@ body {
 .input {
   font-family: "Inter", sans-serif;
   height: 2.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.4rem;
   width: 75%;
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.08);
-  /* z-index: 10; */
+  z-index: 10;
   font-style: normal;
   font-weight: normal;
   font-size: 0.75rem;
@@ -402,9 +416,8 @@ body {
   color: rgba(255, 255, 255, 0.2);
 }
 .m-icon {
-  width: auto;
-  height: 49%;
-  margin-top: 1.3rem;
+  height: 37px;
+  width: 37px;
 }
 .form-button {
   background: linear-gradient(277.9deg, #1f31d1 -5.62%, #2dc0ef 106.21%);
@@ -412,13 +425,17 @@ body {
   border: 0px;
   color: white;
   margin-top: 0.4rem;
-  width: 16%;
+  width: 21%;
   height: 7%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 110.5%;
+}
+.info-left-header-container {
+  height: 7%;
+  display: flex;
 }
 .m-input {
   font-family: "Inter", sans-serif;
@@ -427,7 +444,7 @@ body {
   border-radius: 0.37rem;
   width: 75%;
   background: rgba(255, 255, 255, 0.08);
-  /* z-index: 10; */
+  z-index: 10;
   font-style: normal;
   font-weight: normal;
   font-size: 0.75rem;
@@ -436,10 +453,11 @@ body {
   color: rgba(255, 255, 255, 0.2);
 }
 .info-left {
-  height: 100%;
+  height: 89%;
   width: 50%;
   padding-left: 3rem;
   border-right: 0.06rem solid #2c2c2c;
+  margin-top: 1.8rem;
 }
 .hand {
   margin-top: 0.06rem;
@@ -448,7 +466,8 @@ body {
 .contact {
   color: white;
   margin-left: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
 }
 
 .s-media-container {
@@ -471,10 +490,8 @@ body {
 .phone-container {
   height: 3.75rem;
   width: 3.75rem;
-  /* background-color: #bbb; */
   background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
-  display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -488,12 +505,18 @@ body {
 }
 .phone-no {
   margin-top: 0.4rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.7);
 }
 .contact-details {
   margin-top: 0.45rem;
 }
 .social {
-  margin-top: 1.9rem;
+  margin-top: 2.3rem;
 }
 .social li {
   line-height: 0;
@@ -571,7 +594,8 @@ body {
   justify-content: center;
 }
 .m-icon {
-  width: 5rem;
+  height: 37px;
+  width: 37px;
 }
 .field {
 }
