@@ -10,7 +10,7 @@ const RUReady = () => {
                  <div className="vic-icon-container">
                      <img src={vic} alt="victory" className='vic-icon'/>
                  </div>
-                 <div className="text-container">
+                 <div className="text-container ">
                     <h2 className='clash-b'>Are you ready ?</h2>
                     <p className='inter-r dim'>To be a part of the biggest tech<br/> fest in South India</p>
                  </div>
