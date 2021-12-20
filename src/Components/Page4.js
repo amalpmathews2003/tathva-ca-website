@@ -15,8 +15,8 @@ const Page4 = () => {
         <div className="other-info-page-4">
         {/* <img src={rectangle} alt="grad-reactangle" className='rectangle' /> */}
         <div className="content-info-desc-page-4">
-          <p className='desc-page-4'>Any student currently pursuing education in an established institute who wishes to participate in Tathva may apply.<br/>
-          Applicants having good interpersonal and communication skills with previous experience will be given preference.</p>
+          <p className='desc-page-4'>Any student currently pursuing education in an established institute who wishes to participate in Tathva may apply.</p>
+          <p className='desc-page-4'>Applicants having good interpersonal and communication skills with previous experience will be given preference.</p>
         </div>
       </div>
       </div>  

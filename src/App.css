@@ -72,7 +72,7 @@ body {
   max-width: 40vw;
 }
 .nav-toggle {
-  margin:1em;
+  margin: 1em;
   max-width: 1rem;
 }
 
@@ -183,10 +183,10 @@ body {
   height: auto;
 }
 .prize-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 68vw;
 }
 .prize-upper {
@@ -332,21 +332,18 @@ align-items: center;
   padding: 1em;
   background: #151515;
 }
-.text-container{
-  width: 100%;
+.text-container {
+  width: 103%;
 }
 
 .vic-icon-container {
-  flex-basis: 30%;
-  /* background: red; */
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  width: 10rem;
+  height: 6rem;
+  object-fit: cover;
 }
 
 .vic-icon {
-  width: 54%;
+  width: 78%;
 }
 
 /*-----------------------------------------------------------------------------------------contact-us*/
@@ -739,7 +736,7 @@ align-items: center;
   font-size: 1rem;
 }
 .btn-container {
-  width: 100%;
+  width: 17%;
   display: flex;
   justify-content: flex-end;
 }
@@ -897,5 +894,11 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
+  }
+  .ruready-margin {
+    margin: 0px;
+  }
+  .ruready-desc-margin {
+    margin-top: 0.3125rem;
   }
 }
