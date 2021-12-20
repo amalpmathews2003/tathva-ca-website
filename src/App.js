@@ -7,7 +7,10 @@ import { Referals } from './Components/Referals';
 function App() {
   return (
     <div className="App">
-<Register/></div>
+{/* <Register/> */}
+<Home/>
+
+</div>
   )
 }
 

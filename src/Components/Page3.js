@@ -45,9 +45,9 @@ const Page3 = () => {
         </div>
         </div>
         <div className="content-info-desc-page-3">
-          <p className='desc inter-r'>Special certificate for top 20 people<br/>
-          Certificate for those who completed a certain tier (% of work)<br/>
-          Extra benefits for excellence in work (Awarded by Tathva PRC)</p>
+          <p className='desc inter-r'>Special certificate for top 20 people</p>
+          <p className='desc inter-r'>Certificate for those who completed a certain tier (% of work)</p>
+          <p className='desc inter-r'>Extra benefits for excellence in work (Awarded by Tathva PRC)</p>
         </div>
       </div>
       </div>
