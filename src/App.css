@@ -867,6 +867,85 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .ruready-h2 {
+    margin: 0px;
+  }
+  .btn-container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .vic-icon-container {
+    width: 18rem;
+    height: 3rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .row-c {
+    display: block;
+  }
+  .media {
+    display: block;
+  }
+  .body {
+    font-size: calc(0.75em + 1vmin);
+  }
+  .phone-no {
+    font-size: none;
+  }
+  .contact-details {
+    border-bottom: 0.06rem solid #474545;
+  }
+  .form {
+    margin-left: 10%;
+    padding-left: 0%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-container {
+    margin: 0px 1.3rem 0px 0px;
+    height: 3rem;
+    width: 3rem;
+    margin: 0px 1.3rem 0px 0px;
+  }
+  .info-left {
+    padding-left: 10%;
+    width: auto;
+    display: flex;
+    border-right: none;
+  }
+  .s-media-container {
+    display: none;
+  }
+  .form-button {
+    width: 7rem;
+    /* padding: 3px; */
+    height: 3rem;
+    margin-left: 5.5rem;
+  }
+  .info-left-header-container {
+    display: none;
+  }
+  .input,
+  .m-input {
+    width: 90%;
+  }
+  .form-header {
+    display: none;
+  }
+  .form-container {
+    flex-direction: column-reverse;
+    width: 85vw;
+    height: auto;
+  }
   .hero {
     display: flex;
     flex-direction: column-reverse;
@@ -920,7 +999,10 @@ body {
     padding: 1rem;
   }
   .vic-icon {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: -2rem;
+    width: 32%;
   }
 
   .dashboard {

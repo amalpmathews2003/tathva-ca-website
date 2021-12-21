@@ -13,8 +13,8 @@ function App() {
 {/* <Home/> */}
 {/* <ContactUs /> */}
 {/* <HeaderBg/> */}
-{/* <Contact/> */}
-<RegisterPage/>
+<Contact/>
+{/* <RegisterPage/> */}
 </div>
 
 
