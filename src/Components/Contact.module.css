@@ -1,0 +1,35 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+.overlap {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  position: relative;
+  top: 30vh;
+  align-items: center;
+}
+.header-background-contact {
+  position: absolute;
+}
+.RUready-contact {
+  position: relative;
+  top: 42vh;
+}
+.footer-contact {
+  position: relative;
+  top: 54vh;
+}
+.header-contact {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  top: -19vh;
+  align-items: center;
+}
+.header-text-image {
+  height: 37px;
+  width: 37px;
+  margin-right: 1rem;
+}

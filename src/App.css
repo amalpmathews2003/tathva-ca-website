@@ -65,6 +65,7 @@ body {
   height: 3em;
   position: absolute;
   margin-top: 2em;
+  z-index: 100;
 }
 .nav-logo {
   max-height: 100%;
@@ -347,6 +348,10 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------------contact-us*/
+.hbg {
+  width: 100vw;
+  height: 43vh;
+}
 .form-container {
   /* background-color: red; */
   background: #151515;
@@ -639,7 +644,7 @@ body {
 .footer {
   width: 100%;
   background: #151515;
-  position: absolute;
+  /* position: absolute; */
   padding: 1em 5%;
 }
 .footer-logo {
@@ -930,9 +935,5 @@ body {
   }
   .ruready-desc-margin {
     margin-top: 0.3125rem;
-  }
-  .hbg {
-    width: 100vw;
-    height: 43vh;
   }
 }

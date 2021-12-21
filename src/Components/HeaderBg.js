@@ -1,5 +1,5 @@
 import hbg from './images/db-bg.png'
-import '../App.css';
+
 import React from 'react'
 
 const HeaderBg = () => {

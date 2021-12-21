@@ -89,7 +89,7 @@ const ContactUs = () => {
                     </div>
                     <div className="field"> 
                     <label className='label'>Message</label>
-                    <input className='m-input' type="textarea" name='message' placeholder='Enter your message' value={ formValues.message} onChange={handleChange}/>
+                    <input className='m-input' type="textareagit stt" name='message' placeholder='Enter your message' value={ formValues.message} onChange={handleChange}/>
                     </div>
                     <button className='form-button'>Submit</button>
                 </form>
