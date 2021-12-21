@@ -931,4 +931,8 @@ body {
   .ruready-desc-margin {
     margin-top: 0.3125rem;
   }
+  .hbg {
+    width: 100vw;
+    height: 43vh;
+  }
 }
