@@ -18,14 +18,14 @@ const Register = () => {
 
     return (
         <>
-        <Nav/>
-        <div ><img src={Bg} alt-="bg" className="db-bg"/></div>
+        {/* <Nav/> */}
+        {/* <div ><img src={Bg} alt-="bg" className="db-bg"/></div> */}
             <div className="form2-container">           
 
 
                 <form action="" className='form2'>
                     <div className="form-face">
-                        <img src={face} alt="face-image" className='m-icon'/>
+                        <img src={face} alt="face-image" className='m-register-icon'/>
                     </div>
                     <div className="field-form-2">
                         <label className='label-form-2'>Name</label>
@@ -58,7 +58,7 @@ const Register = () => {
                     <button className='form2-button'>Register</button>
                 </form>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }

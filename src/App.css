@@ -603,6 +603,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 7rem;
+}
+.m-register-icon {
+  height: 4rem;
+  width: 4rem;
 }
 .m-icon {
   height: 37px;
