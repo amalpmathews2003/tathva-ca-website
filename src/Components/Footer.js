@@ -7,7 +7,7 @@ import Twiter from "./images/twitter.png"
 const Footer =()=>{
     return(
         <div className="footer">
-            <div className="row">
+            <div className="row footera">
                 <img className="footer-logo" src={Logo} alt="logo"/>
                 <div className="footer-links row">
                     <ul className="hot-links inter-r">
