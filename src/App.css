@@ -150,9 +150,15 @@ body {
   padding: 2em;
 }
 .page-2 {
+  background: linear-gradient(180deg ,rgba(200,74,244,0)0% ,#2FF3FF 61.98%,#EE2FFF 100%);
+ 
+  
   height: auto;
   min-height: 60vh;
   width: 100vw;
+}
+.page-2 .row{
+  margin-top: 100px;
 }
 .page-2-h {
   font-size: 2rem;
@@ -160,7 +166,7 @@ body {
 }
 .page-2-cards {
   height: 100%;
-  border: 1px solid white;
+
   padding: 2em 0;
   background-color: linear-gradient(
     0deg,
