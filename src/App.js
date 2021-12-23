@@ -13,7 +13,13 @@ import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Home/>
+    <Router>
+    <Routes> 
+    <Route path='/' element={<Home/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    {/* <Route path='/l' element={<Home/>}/> */}
+    </Routes>
+    </Router>
     // <Router> 
     // <nav>
     //   <Link to='/'>Home</Link>
@@ -26,7 +32,7 @@ function App() {
 
     // </Routes>
     // </Router>
-  )
+  );
 }
 
 export default App;
