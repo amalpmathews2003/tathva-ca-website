@@ -11,16 +11,9 @@ import RegisterPage from './Components/RegisterPage';
 function App() {
   return (
     <div className="App">
-<Home/>
-{/* <ContactUs /> */}
-{/* <HeaderBg/> */}
-<<<<<<< HEAD
-<Contact/>
-<RegisterPage/>
-=======
-{/* <Contact/> */}
-{/* <RegisterPage/> */}
->>>>>>> 8df572c8d2a9838eb188938274c516528801bf42
+    {/* <h1>hello</h1>
+     */}
+    <Home/>
 </div>
 
 
