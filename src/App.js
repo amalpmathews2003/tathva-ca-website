@@ -1,4 +1,5 @@
 import './App.css';
+import './Homepage.css'
 import {Home} from "./Components/Home"
 import {Dashboard} from "./Components/Dashboard"
 import {ContactUs} from "./Components/ContactUs"
@@ -13,8 +14,13 @@ function App() {
 <Home/>
 {/* <ContactUs /> */}
 {/* <HeaderBg/> */}
+<<<<<<< HEAD
 <Contact/>
 <RegisterPage/>
+=======
+{/* <Contact/> */}
+{/* <RegisterPage/> */}
+>>>>>>> 8df572c8d2a9838eb188938274c516528801bf42
 </div>
 
 

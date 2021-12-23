@@ -5,7 +5,7 @@ const HeroText = ()=>{
         <div className="hero-txt container ">
          <h1 className="hero-h clash-b">Campus <br/>Ambassodor</h1>  
          <p className="inter-r hero-p dim">Be the emissary of Tathva 2021</p> 
-       <div className="clash-r"> <a href="#" className="btn-pri">Sign up</a>
+       <div className="clash-r  clash-n"> <a href="#" className="btn-pri">Sign up</a>
          <a href="#" className="btn">Explore</a>
          </div> 
          <div className="row stats">

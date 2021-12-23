@@ -4,11 +4,15 @@ import hexa from './images/Hexagon.png'
 const Page4 = () => {
     return (
         <>
+        <div className='page4mobile'>
+
+        </div>
         <div className="page-4">
         <div className=''>
         
-        <p className='text clash-sb float-r'>Eligibility</p>
+        
               <div className="polygon-page-4">
+
       <img src={hexa} alt="poly-i" className='poly-i-page-4'/>
       </div></div>
         <div className="page-4-info">

@@ -6,8 +6,8 @@ const Page2 = () => {
     return (
         <>
         <div className="page-2">
-          <div className="">
-            <h2 className='clash-sb page-2-h' >What you should do</h2>
+          <div className="page">
+            <h2 className='clash-sb clash-sbi page-2-h' >What you should do</h2>
           </div>
           <div className="container row page-2-cards">
           {cardData.map((item) =>(
