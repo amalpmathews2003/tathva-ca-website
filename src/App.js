@@ -10,11 +10,11 @@ import RegisterPage from './Components/RegisterPage';
 function App() {
   return (
     <div className="App">
-{/* <Home/> */}
+<Home/>
 {/* <ContactUs /> */}
 {/* <HeaderBg/> */}
 <Contact/>
-{/* <RegisterPage/> */}
+<RegisterPage/>
 </div>
 
 
