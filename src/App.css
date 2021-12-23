@@ -916,6 +916,10 @@ body {
   }
   .media {
     display: block;
+    border: 1px solid;
+    border-radius: 0;
+    width: 300px;
+    margin-top: 80px;
   }
   .body {
     font-size: calc(0.75em + 1vmin);
@@ -1025,8 +1029,9 @@ body {
   .vic-icon {
     /* display: none; */
     position: relative;
-    top: -2rem;
+    top: -3.9rem;
     width: 32%;
+    height: 6rem;
   }
 
   .dashboard {
