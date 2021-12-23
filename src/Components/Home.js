@@ -19,7 +19,9 @@ function Home(){
             
              <Page2/>
              <Page3/>
+             <div className="page-4-div"> 
              <Page4/>
+             </div>
             <RUReady/>
             <Footer/>
 

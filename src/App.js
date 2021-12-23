@@ -8,16 +8,24 @@ import { Referals } from './Components/Referals';
 import HeaderBg from './Components/HeaderBg';
 import Contact from './Components/Contact';
 import RegisterPage from './Components/RegisterPage';
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+// import Contact from './Components/Contact';
+
 function App() {
   return (
-    <div className="App">
-    {/* <h1>hello</h1>
-     */}
     <Home/>
-</div>
+    // <Router> 
+    // <nav>
+    //   <Link to='/'>Home</Link>
+    //   <Link to='/contact' >Contact</Link>
+    // </nav>
+    // <Routes> 
+    // <Route path='/' element={<Home/>} />
+    // <Route path='/contact' element={<Contact/>} />
 
 
-
+    // </Routes>
+    // </Router>
   )
 }
 

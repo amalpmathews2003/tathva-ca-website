@@ -906,6 +906,50 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .page-2 {
+    width: auto;
+  }
+  .desc-page-4 {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .content-info-desc-page-4 {
+    width: 85%;
+  }
+  .other-info-page-4 {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .page-4-info {
+    width: 100%;
+    height: 35rem;
+  }
+  .poly-i-page-4 {
+    margin-left: 8rem;
+    width: 32rem;
+    height: 36rem;
+  }
+  .polygon-page-4 {
+    height: 17rem;
+  }
+  .text-page-4 {
+    position: absolute;
+    right: -4rem;
+    font-weight: 600;
+    margin-top: 11rem;
+    font-size: 3rem;
+  }
+  .box-page-4 {
+    height: 0px;
+    position: absolute;
+    margin-right: 4rem;
+    right: 23rem;
+    z-index: 100;
+  }
+  .page-4 {
+    display: flex;
+    flex-direction: column;
+  }
   .polygon {
     position: relative;
     left: -4rem;
@@ -1038,10 +1082,6 @@ body {
     font-size: 2rem;
   }
 
-  .page-4 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .desc {
     font-size: 1rem;
   }
