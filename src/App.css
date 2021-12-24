@@ -354,7 +354,9 @@ height: auto;
   /* background-color: red; */
   background: #151515;
   width: 60vw;
-  height: 75vh;
+  min-width: 750px;
+  min-height: 75vh;
+  height: auto;
   margin: 0 auto;
   display: flex;
   border-radius: 0.8rem;
@@ -899,4 +901,16 @@ height: auto;
     justify-content: space-between;
     margin-left: 5%;
   }
+
+  .phone-container{
+    display: none;
+  }
+  .form-container{
+    display: flex;
+  flex-direction: column-reverse;
+justify-content: center;
+align-items: center;  }
+.form{
+  width: 100%;
+}
 }

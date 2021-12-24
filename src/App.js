@@ -7,8 +7,7 @@ import { Referals } from './Components/Referals';
 function App() {
   return (
     <div className="App">
-<Home/>
-</div>
+<ContactUs/></div>
 
 
 
