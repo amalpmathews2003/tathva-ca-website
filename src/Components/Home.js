@@ -1,7 +1,7 @@
 import React from "react"
 
 import {Hero} from "./Hero"
-
+import { Sponsors } from "./sponsors"
 import {Nav} from "./Nav"
 import {Footer} from "./Footer"
 import {Page2} from "./Page2"
@@ -16,7 +16,7 @@ function Home(){
         <div>
             <Nav/>
             <Hero/>
-            
+            <Sponsors/>
              <Page2/>
              <Page3/>
              <div className="page-4-div"> 

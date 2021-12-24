@@ -3,7 +3,7 @@ import {SponsorImg} from "./SponsorImg"
 import { SponsorData } from "./Data"
 
 
- export default function Sponsors(){
+  function Sponsors(){
     const Sponsorimg=SponsorData.map((data) =>
     <SponsorImg img={data.img} alt={data.alt}/>
     )
@@ -14,5 +14,6 @@ import { SponsorData } from "./Data"
       
     )
 }
+export {Sponsors}
 
  

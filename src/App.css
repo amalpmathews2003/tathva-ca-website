@@ -26,7 +26,6 @@
 
 * {
   box-sizing: border-box;
-  /* overflow-x: clip; */
 }
 a {
   text-decoration: none;
@@ -59,6 +58,9 @@ body {
   color: #ffff;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  overflow-x: clip;
+
 }
 /*----------------------------------------------------------------------------------------Nav-bar*/
 .tathva-logo-container {
@@ -109,16 +111,42 @@ body {
 }
 
 .hero-img {
-  margin-top: 20px;
   width: 100%;
+  }
+
+.hero-bg-1{
+  height: 100px;
+width: 100%;
+border-radius: 0px;
+  background: #D14EFF;
+ filter: blur(70px);
+  transform: rotate(45deg);
+  transform: translateX(-50%);
+  z-index: -100;
+
+}
+.hero-bg-2{
+  height: 100px;
+  width: 100%;
+border-radius: 0px;
+  background: #419DCE;
+filter: blur(70px);
+transform: rotate(-60deg);
+transform: translateX(50%);
+z-index: -100;
+
+
 }
 
 .hero-img-container {
   overflow-x: clip;
+  overflow-y:hidden ;
   top: 0;
   right: 0;
   padding: 2em 0;
-  min-width:350px;
+  min-width:500px;
+  height: autogit ;
+  
 }
 
 .hero-txt {
@@ -690,10 +718,9 @@ body {
   width: 90%;
   max-width: 100vw;
   margin: 2em auto;
-  overflow-x: hidden;
-}
+transform: translateY(-200%);}
 .sponsor-img {
-  min-width: 60px;
+  width:min(10vw,60px);
 }
 
 /*----------------------------------------------------------------------------------------footer*/
@@ -952,7 +979,6 @@ body {
     position: absolute;
     right: -4rem;
     font-weight: 600;
-    margin-top: 11rem;
     font-size: 3rem;
   }
   .box-page-4 {
@@ -961,6 +987,8 @@ body {
     margin-right: 4rem;
     right: 23rem;
     z-index: 100;
+    transform: translateY(-7em);
+
   }
   .page-4 {
     display: flex;
@@ -1131,4 +1159,9 @@ padding: 0 ;  }
   .ruready-desc-margin {
     margin-top: 0.3125rem;
   }
+  .hero-bg-1,.hero-bg-2{
+display: none;}
+.sponsors{
+  display: none;
+}
 }
