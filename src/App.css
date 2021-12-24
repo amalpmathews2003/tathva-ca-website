@@ -188,7 +188,7 @@ body {
   margin-top: 100px;
 }
 .page-2-h {
-  font-size: 2rem;
+  font-size: 3rem;
   padding-left: 2em;
 }
 .page-2-cards {
@@ -324,7 +324,6 @@ body {
   height: 70vh;
   /* min-height: 100vh; */
   width: 100vw;
-  border: 1px solid white;
 }
 .page-4-info {
   /* display: flex; */
@@ -1123,8 +1122,9 @@ body {
   .db-links {
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-  }
+padding: 0 ;  }
+
+
   .ruready-margin {
     margin: 0px;
   }
