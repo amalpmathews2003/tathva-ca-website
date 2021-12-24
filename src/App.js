@@ -20,6 +20,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/contact' element={<Contact/>}/>
     <Route path='/signup' element={<RegisterPage/>}/>
+    <Route path='/Dashboard/*' element={<Dashboard/>}/>
     {/* <Route path='/l' element={<Home/>}/> */}
     </Routes>
     </ScrollToTop>

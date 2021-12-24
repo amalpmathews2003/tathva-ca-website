@@ -10,6 +10,9 @@ import feedbackImg from "./images/feedback.png"
 import reactDom from "react-dom"
 import pic from "./images/profile-pic.png"
 import Bg from "./images/db-bg.png"
+import {Link,Route, Routes} from "react-router-dom"
+
+
 
 function Dashboard(){
     return(
@@ -24,15 +27,22 @@ function Dashboard(){
                     <p className="Total-points dim inter-r">1389 Points</p>
                 </div>
                 <ul className="db-links">
-                    <li><button className="inter-sb"id="Referals"><p> <img src={referalImg} alt="img"/> Referals</p></button></li>
-                    <li><button  className="inter-sb" id="Posters"><p><img src={posterImg}/> Posters</p></button></li>
-                    <li><button  className="inter-sb" id="Feedback"><p> <img src={feedbackImg} alt="img"/>  Feedback</p></button></li>
+                   <Link to={`/Dashboard/Referals`}> <button className="inter-sb"id="Referals"><p> <img src={referalImg} alt="img"/> Referals</p></button></Link>
+                   <Link to={`/Dashboard/Posters`}><button  className="inter-sb" id="Posters"><p><img src={posterImg}/> Posters</p></button></Link> 
+                   <Link  to={`/Dashboard/Feedback`}><button  className="inter-sb" id="Feedback"><p> <img src={feedbackImg} alt="img"/>  Feedback</p></button></Link>
                     
                 </ul>
             </div>
+
             <div className="main-area">
-    <Posters/>    
+
+  <Routes>
+      <Route path="/Referals" element={<Referals/>}/>
+      <Route path="/Posters" element={<Posters/>}/>
+      <Route path="/Feedback" element={<Feedback/>}/>
+  </Routes>
 </div>
+
         </div>
         <Footer/>
         </div>

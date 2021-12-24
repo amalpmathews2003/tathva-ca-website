@@ -27,6 +27,8 @@ const Nav= ()=>{
       <Link to='/' className="nav-text">Home</Link>
       <Link to='/contact' className="nav-text">Contact</Link>
       <Link to='/leaderboard' className="nav-text">Leaderboard</Link>
+      
+      <Link to='/Dashboard'>Dashboard</Link>
            <div className=" row nav-btn flex">
            <h3><a className="inter-r txt-black" >Sign In</a></h3>
           <button className="nav-toggle">

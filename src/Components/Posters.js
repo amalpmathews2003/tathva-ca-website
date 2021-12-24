@@ -9,6 +9,7 @@ const PosterCard = PosterData.map(item=>{
 
 
 function Posters(){
+
     return(
         <div className="posters">
       <h2 className="heading inter-sb"><img src={posterImg}/> Posters</h2>

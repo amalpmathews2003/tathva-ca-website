@@ -717,6 +717,8 @@ body {
   background: #151515;
   width: auto;
   max-width: 800px;
+  margin-bottom:10vw;
+
   height: auto;
   transform: translateY(min(10%, 50px));
 }
