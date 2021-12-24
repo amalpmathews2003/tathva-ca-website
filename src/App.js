@@ -9,16 +9,21 @@ import HeaderBg from './Components/HeaderBg';
 import Contact from './Components/Contact';
 import RegisterPage from './Components/RegisterPage';
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import {ScrollToTop} from "./Components/SrollToTop"
 // import Contact from './Components/Contact';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop>
     <Routes> 
     <Route path='/' element={<Home/>}/>
     <Route path='/contact' element={<Contact/>}/>
+    <Route path='/signup' element={<RegisterPage/>}/>
     {/* <Route path='/l' element={<Home/>}/> */}
     </Routes>
+    </ScrollToTop>
+
     </Router>
     // <Router> 
     // <nav>

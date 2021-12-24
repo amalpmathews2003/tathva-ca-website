@@ -1,5 +1,7 @@
 import React from 'react'
 import vic from './images/victory.png'
+import { Link } from "react-router-dom";
+
 
 
 const RUReady = () => {
@@ -16,7 +18,7 @@ const RUReady = () => {
                  </div>
                  </div>
                  <div className="btn-container">
-                    <button className='btn-pri inter-r '>Sign Up</button>
+                    <button className='btn-pri inter-r '><Link to='/signup' >Sign Up</Link></button>
                  </div>
             
          </div>   
@@ -25,3 +27,4 @@ const RUReady = () => {
 }
 
 export{RUReady}
+ 
