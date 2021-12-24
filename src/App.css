@@ -321,8 +321,8 @@ body {
 /*-----------------------------------------------------------------------------------------------------page4*/
 .page-4 {
   display: flex;
-  height: auto;
-  min-height: 100vh;
+  height: 70vh;
+  /* min-height: 100vh; */
   width: 100vw;
   border: 1px solid white;
 }
@@ -346,7 +346,7 @@ body {
 .polygon-page-4 {
   position: absolute;
   width: 50vw;
-height: auto;
+  height: auto;
   right: -10%;
   display: inline-flex;
   align-items: center;
@@ -358,7 +358,7 @@ height: auto;
 
 .poly-i-page-4 {
   width: 70%;
-height: auto;
+  height: auto;
   object-fit: cover;
 }
 .content-info-desc-page-4 {
