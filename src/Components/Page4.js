@@ -5,10 +5,11 @@ const Page4 = () => {
     return (
         <>
         <div className="page-4">
-        <div className="box-page-4">
-        <p className='text text-page-4'>Eligibility</p>
-        </div>
         <div className="polygon-page-4">
+
+        <div className="box-page-4">
+        <p className='text text-page-4 clash-b'>Eligibility</p>
+        </div>
       <img src={hexa} alt="poly-i" className='poly-i-page-4'/>
       </div>
         <div className="page-4-info">

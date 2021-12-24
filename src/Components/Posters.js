@@ -7,7 +7,6 @@ const PosterCard = PosterData.map(item=>{
     return(<Poster heading={item.heading} writeup={item.writeup}/>)
 })
 
-
 function Posters(){
 
     return(
