@@ -60,7 +60,6 @@ body {
   padding: 0;
   width: 100vw;
   overflow-x: clip;
-
 }
 /*----------------------------------------------------------------------------------------Nav-bar*/
 .tathva-logo-container {
@@ -112,41 +111,37 @@ body {
 
 .hero-img {
   width: 100%;
-  }
+}
 
-.hero-bg-1{
+.hero-bg-1 {
   height: 100px;
-width: 100%;
-border-radius: 0px;
-  background: #D14EFF;
- filter: blur(70px);
+  width: 100%;
+  border-radius: 0px;
+  background: #d14eff;
+  filter: blur(70px);
   transform: rotate(45deg);
   transform: translateX(-50%);
   z-index: -100;
-
 }
-.hero-bg-2{
+.hero-bg-2 {
   height: 100px;
   width: 100%;
-border-radius: 0px;
-  background: #419DCE;
-filter: blur(70px);
-transform: rotate(-60deg);
-transform: translateX(50%);
-z-index: -100;
-
-
+  border-radius: 0px;
+  background: #419dce;
+  filter: blur(70px);
+  transform: rotate(-60deg);
+  transform: translateX(50%);
+  z-index: -100;
 }
 
 .hero-img-container {
   overflow-x: clip;
-  overflow-y:hidden ;
+  overflow-y: hidden;
   top: 0;
   right: 0;
   padding: 2em 0;
-  min-width:500px;
-  height: autogit ;
-  
+  min-width: 500px;
+  height: autogit;
 }
 
 .hero-txt {
@@ -176,7 +171,7 @@ z-index: -100;
 .hero-p {
   font-size: 1.5 rem;
   margin-top: 0;
-  margin-bottom:3em;
+  margin-bottom: 3em;
 }
 .hero-h {
   font-size: 5rem;
@@ -710,17 +705,16 @@ z-index: -100;
 
 /*--------------------------------------------------------------------------------------------------cards*/
 
-
-
 /*--------------------------------------------------------------------------------------------------sponsors*/
 
 .sponsors {
   width: 90%;
   max-width: 100vw;
   margin: 2em auto;
-transform: translateY(-200%);}
+  transform: translateY(-200%);
+}
 .sponsor-img {
-  width:min(10vw,60px);
+  width: min(10vw, 60px);
 }
 
 /*----------------------------------------------------------------------------------------footer*/
@@ -746,7 +740,7 @@ transform: translateY(-200%);}
   background: #151515;
   width: auto;
   max-width: 800px;
-  margin-bottom:10vw;
+  margin-bottom: 10vw;
   padding-bottom: 5vw;
 
   height: auto;
@@ -789,9 +783,12 @@ transform: translateY(-200%);}
 .point-table {
   width: 250px;
   background: rgba(255, 255, 255, 0.08);
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   box-sizing: border-box;
   border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .point-table ul li {
   line-height: 0;
@@ -988,7 +985,6 @@ transform: translateY(-200%);}
     right: 23rem;
     z-index: 100;
     transform: translateY(-7em);
-
   }
   .page-4 {
     display: flex;
@@ -1150,8 +1146,8 @@ transform: translateY(-200%);}
   .db-links {
     display: flex;
     justify-content: space-between;
-padding: 0 ;  }
-
+    padding: 0px;
+  }
 
   .ruready-margin {
     margin: 0px;
@@ -1159,9 +1155,18 @@ padding: 0 ;  }
   .ruready-desc-margin {
     margin-top: 0.3125rem;
   }
-  .hero-bg-1,.hero-bg-2{
-display: none;}
-.sponsors{
-  display: none;
+  .hero-bg-1,
+  .hero-bg-2 {
+    display: none;
+  }
+  .sponsors {
+    display: none;
+  }
 }
+
+.referals-ul {
+  padding: 0px;
+}
+.workhop-li {
+  padding-right: 5rem;
 }

@@ -11,8 +11,8 @@ function Referals(props){
             <h3 className="inter-sb">Point per Person</h3>
             <p className="inter-r">Refer friends to Tathva events, workshops and lectures using your <br/> unique referrel code to receive points</p>
             <div className="point-table">
-                <ul>
-                    <li className="row"><p className="inter-r">Workshops</p><p  className="inter-r">2500</p></li>
+                <ul className="referals-ul">
+                    <li className="row"><p className="inter-r workshop-li">Workshops</p><p  className="inter-r">2500</p></li>
                     <li className="row"><p  className="inter-r">Hackathons</p><p  className="inter-r">1500</p></li>
                     <li className="row"><p  className="inter-r">Lectures</p><p  className="inter-r">1250</p></li>
                     <li className="row"><p  className="inter-r">Events</p><p className="inter-r">1250</p></li>
