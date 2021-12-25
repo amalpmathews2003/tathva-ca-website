@@ -12,13 +12,13 @@ function Posters(){
    const [show,setShow]=useState(false)
     return(
         <div className="posters">
-      <h2 className="heading inter-sb"><img src={posterImg}/> Posters</h2>
-        <div className="db-elements">
-            <div className="row guide-tab"><h3 className="clash-sb">Guide</h3>
+      <h2 className="heading inter-sb poster-heading"><img src={posterImg}/> Posters</h2>
+        <div>
+            <div className="row guide-tab"><h3 className="clash-sb guide-text">Guide</h3>
             <button className="guide-toggle" onClick={()=>setShow(!show)}><img src={guideToggle}/></button></div>
             {
                     show?<div className="guide">
-                <div><h3 className="inter-sb">Whatsapp</h3>
+                <div className="poster-details"><h3 className="inter-sb">Whatsapp</h3>
                 <p className="inter-r"> For every group shared to 10 points will be awarded. For every 5th group shared to, an additional 10 points is awarded. eg: 4 groups means 40 points and 5 groups means 60 points.
 For every status put up atleast 10 points will be awarded. For every 50 views 10 points will be awarded and for every 150 views additional 10 points will be awarded. eg: If your status gets 30 views you will get 10 points, 50 views you will get 10 points, 100 views you will get 20 points and so on. 150 vies you will get 30 + 10 = 40 points. The maximum points of the above mentioned criteria is 220 points</p></div>
                 <div><h3 className="inter-sb">Instagram</h3>

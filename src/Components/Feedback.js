@@ -4,7 +4,7 @@ import feedbackImg from "./images/feedback.png"
 
 function Feedback(){
     return(<div className="feedback">
-<h2 className="heading"><img src={feedbackImg} alt="img"/> Feedback</h2>
+<h2 className="heading feedback-heading"><img src={feedbackImg} alt="img"/> Feedback</h2>
 <div className="db-elements">
     <p>We'd love to know your thoughts</p>
     <div>
@@ -13,7 +13,7 @@ function Feedback(){
         placeholder="Enter your message"
         className="feedback-txt" 
         />
-        <input type="submit" className="btn-sec"></input>
+        <button className='form-button'>Submit</button>
       </div>
 
 </div>

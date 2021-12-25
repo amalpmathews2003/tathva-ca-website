@@ -505,8 +505,8 @@ body {
   border: 0px;
   color: white;
   margin-top: 0.4rem;
-  width: 21%;
-  height: 7%;
+  width: 5.3rem;
+  height: 2.5rem;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -756,12 +756,20 @@ body {
   top: 0;
   z-index: -100;
 }
+.poster-heading {
+  padding: 0px;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+.poster-details {
+  padding: 0 2em;
+}
 .db-elements {
   padding: 0 2em;
 }
 .heading {
   border-bottom: 1px solid #2c2c2c;
-  padding: 1em 2em;
+  /* padding: 1em 2em; */
 }
 .side-nav {
   width: 300px;
@@ -808,6 +816,10 @@ body {
 .guide-toggle img {
   max-width: 1rem;
 }
+.guide-text {
+  font-size: 1.5rem;
+  margin-top: 0px;
+}
 
 .poster-card {
   width: 100%;
@@ -816,13 +828,22 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 10px;
 }
-
+.feedback-heading {
+  padding-left: 2rem;
+}
 .feedback-txt {
-  min-width: 200px;
-  width: auto;
-  min-height: 100px;
+  height: 10rem;
+  width: 17rem;
+  border: none;
+  border-radius: 0px;
+  display: block;
+  padding-left: 1.2rem;
+  padding-top: 0.7rem;
+  /* min-width: 200px; */
+  /* width: auto; */
+  /* min-height: 100px; */
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: white;
 }
 
@@ -847,13 +868,7 @@ body {
   background: var(--primary);
   font-size: 1rem;
 }
-.btn-sec {
-  padding: 1rem;
-  border-radius: 2em;
-  background-color: var(--secondary);
-  margin: 1em;
-  font-size: 1rem;
-}
+
 .btn-container {
   width: 17%;
   display: flex;
@@ -1143,6 +1158,7 @@ body {
     border: none;
     padding: 0 auto;
   }
+
   .db-links {
     display: flex;
     justify-content: space-between;
@@ -1167,6 +1183,39 @@ body {
 .referals-ul {
   padding: 0px;
 }
-.workhop-li {
+.workshop-li {
   padding-right: 5rem;
+}
+.dashboard-ul {
+  padding: 0px;
+  margin: 0px;
+}
+.code-container {
+  display: flex;
+  flex-direction: row;
+  border: 0px white;
+  /* background-color: red; */
+  /* height: 2.5rem; */
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(
+    298.74deg,
+    #e91dfb 7.67%,
+    #632dff 28.63%,
+    #359eff 61.36%,
+    #1bffe4 83.87%
+  );
+  border-radius: 12px;
+  width: 5rem;
+  height: 2.5rem;
+}
+.referal-code-text {
+  margin-top: 9px;
+}
+.guide-tab {
+  border-bottom: 1px solid #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
