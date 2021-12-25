@@ -17,8 +17,8 @@ import {Link,Route, Routes} from "react-router-dom"
 function Dashboard(){
     return(
        <div className="dashboard-container">
-           <Nav/>
-           <div ><img src={Bg} alt-="bg" className="db-bg"/></div>
+           {/* <Nav/> */}
+           {/* <div ><img src={Bg} alt-="bg" className="db-bg"/></div> */}
         <div className="dashboard">
             <div className="side-nav">
                 <div>
@@ -44,7 +44,7 @@ function Dashboard(){
 </div>
 
         </div>
-        <Footer/>
+        {/* <Footer/> */}
         </div>
         
     )
