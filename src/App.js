@@ -14,9 +14,10 @@ import {ScrollToTop} from "./Components/SrollToTop"
 import NewDashboard from './Components/NewDashboard';
 // import initializeFirebase from './Components/firebase';
 // import Contact from './Components/Contact';
-import { useEffect } from 'react';
+ 
 import React from 'react';
 import app from './Components/firebase';
+ 
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   //   initializeFirebase()},[])
 
   return (
+ 
     <Router>
       <ScrollToTop>
     <Routes> 
@@ -36,6 +38,7 @@ function App() {
     </ScrollToTop>
 
     </Router>
+   
     // <Router> 
     // <nav>
     //   <Link to='/'>Home</Link>

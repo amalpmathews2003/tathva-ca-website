@@ -1,12 +1,14 @@
 import React from "react";
 import tathvaLogo from "./images/Tathva'21 White Logo.png"
 import toggle from "./images/nav-img.png"
-import { Link } from "react-router-dom";
+import { Link , useHistory, useNavigate} from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import {authentication} from './firebase'
 
-
 const Nav= ()=>{
+
+    let navigate = useNavigate();
+
     const SignInWithFirebase = () =>{
         const provider = new GoogleAuthProvider();
         const auth = getAuth();
@@ -19,6 +21,8 @@ const Nav= ()=>{
     // The signed-in user info.
     const user = result.user;
     console.log(user);
+
+    navigate('/signup/');
     // ...
   }).catch((error) => {
     // Handle Errors here.

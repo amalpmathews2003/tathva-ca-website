@@ -3,6 +3,7 @@ import face from './images/face2.png'
 import Bg from "./images/db-bg.png"
 import { Nav } from './Nav'
 import { Footer } from './Footer'
+import { useNavigate } from 'react-router-dom'
 
 
 const Register = () => {
@@ -14,6 +15,13 @@ const Register = () => {
         const { name, value} = e.target;
         setFormValues({...formValues, [name]:value });
         console.log(formValues);
+    }
+    let navigate  = useNavigate();
+
+    const RedirectToDashboard = async(e) =>{ 
+
+            e.preventDefault();
+        navigate('/Dashboard/Referals')
     }
 
     return (
@@ -55,7 +63,7 @@ const Register = () => {
                         <label className='label-form-2'>Whatsapp No.</label>
                         <input className='input' type="text" name='number' placeholder='Enter your whatsapp no.' value={ formValues.number} onChange={handleChange}/>
                     </div>
-                    <button className='form2-button'>Register</button>
+                    <button className='form2-button' onClick={RedirectToDashboard} >Register</button>
                 </form>
             </div>
             {/* <Footer/> */}
