@@ -5,8 +5,13 @@ import { Link , useHistory, useNavigate} from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import {authentication} from './firebase'
 
+import { useUserContext } from "./userContext";
+
 const Nav= ()=>{
 
+  const {user,setUser}=useUserContext()
+
+  const userObj={"name":"","email":"","photoUrl":"","uid":""}
     let navigate = useNavigate();
 
     const SignInWithFirebase = () =>{
@@ -21,7 +26,12 @@ const Nav= ()=>{
     // The signed-in user info.
     const user = result.user;
     console.log(user);
-
+    userObj['name']=user.displayName
+    userObj["email"]=user.email
+    userObj.photoUrl=user.photoURL
+    userObj.uid=user.uid
+    setUser(userObj)
+    localStorage.setItem("userObj",JSON.stringify(userObj))
     navigate('/signup/');
     // ...
   }).catch((error) => {

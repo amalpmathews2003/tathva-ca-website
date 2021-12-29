@@ -1,8 +1,17 @@
 import React from "react"
 import referalImg from "./images/referal.png"
-
+import { useUserContext } from "./userContext"
+import { useState,useEffect } from "react"
 
 function Referals(props){
+    const {user}=useUserContext()
+
+    const [refCode, setRefCode] = useState()
+    useEffect(() => {
+        let code=user.name.slice(0,2)+user.uid.slice(-2);
+        
+        setRefCode(code)
+    }, [])
     return(
         <div className="referals">
             <h2 className="heading clash-sb"><img src={referalImg} alt="img"/> Referrals</h2>
@@ -26,8 +35,8 @@ function Referals(props){
             <div className="ur-referals">
                 <h3 className="inter-sb">Your referrals</h3>
                 <div className="referal-list">
-                    
-                </div>
+                    {refCode}
+                </div>  
             </div>
             </div>
         </div>

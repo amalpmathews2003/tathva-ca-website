@@ -4,23 +4,25 @@ import Bg from "./images/db-bg.png"
 import { Nav } from './Nav'
 import { Footer } from './Footer'
 import { useNavigate } from 'react-router-dom'
-
+import { useUserContext } from './userContext'
+import addAmbassador from './registerUserFirebase'
 
 const Register = () => {
-    const initialValues = { name: '',college:'', email: '', number: '',year:'', branch:'',yes_no:''};
+
+    const {user}=useUserContext()
+    const initialValues = { name: '',college:'',uid:user.uid, email: '', phone: '',year:'', branch:'',yes_no:''};
     const [formValues, setFormValues] = useState(initialValues);
 
     const handleChange = (e) =>{
         // console.log(e.target);
         const { name, value} = e.target;
         setFormValues({...formValues, [name]:value });
-        console.log(formValues);
     }
     let navigate  = useNavigate();
 
     const RedirectToDashboard = async(e) =>{ 
-
-            e.preventDefault();
+        addAmbassador(formValues)
+        e.preventDefault();
         navigate('/Dashboard/Referals')
     }
 
@@ -33,7 +35,7 @@ const Register = () => {
 
                 <form action="" className='form2'>
                     <div className="form-face">
-                        <img src={face} alt="face-image" className='m-register-icon'/>
+                        <img src={user.photoUrl} alt="face-image" className='m-register-icon'/>
                     </div>
                     <div className="field-form-2">
                         <label className='label-form-2'>Name</label>
@@ -45,11 +47,11 @@ const Register = () => {
                     </div>
                     <div className="field-form-2">
                         <label className='label-form-2'>Branch</label>
-                        <input className='input-form-2' type="text" name='Branch' placeholder='Enter your branch' value={ formValues.branch} onChange={handleChange}/>
+                        <input className='input-form-2' type="text" name='branch' placeholder='Enter your branch' value={ formValues.branch} onChange={handleChange}/>
                     </div>
                     <div className="field-form-2">
                         <label className='label-form-2'>Year</label>
-                        <input className='input-form-2' type="text" name='Year' placeholder='Slelect your year' value={ formValues.year} onChange={handleChange}/>
+                        <input className='input-form-2' type="text" name='year' placeholder='Slelect your year' value={ formValues.year} onChange={handleChange}/>
                     </div>
                     <div className="field-form-2">
                         <label className='label-form-2'>Have you been a campus ambassador before?</label>
@@ -61,7 +63,7 @@ const Register = () => {
                     </div>
                     <div className="field">
                         <label className='label-form-2'>Whatsapp No.</label>
-                        <input className='input' type="text" name='number' placeholder='Enter your whatsapp no.' value={ formValues.number} onChange={handleChange}/>
+                        <input className='input' type="text" name='phone' placeholder='Enter your whatsapp no.' value={ formValues.number} onChange={handleChange}/>
                     </div>
                     <button className='form2-button' onClick={RedirectToDashboard} >Register</button>
                 </form>

@@ -11,10 +11,18 @@ import reactDom from "react-dom"
 import pic from "./images/profile-pic.png"
 import Bg from "./images/db-bg.png"
 import {Link,Route, Routes} from "react-router-dom"
-
-
-
+import { useEffect,useState } from "react"
+import getAmbassador from "./getUserFirebase"
+import { useUserContext } from "./userContext"
 function Dashboard(){
+    const [ambassador, setAmbassador] = useState({name:"",points:0})
+    const {user}=useUserContext()
+    useEffect(() => {
+        getAmbassador("0DperUSRUqQp6EACy0d7jcc4sp82")
+        .then(res=>{
+            setAmbassador(res[0])
+        })
+    }, [])
     return(
        <div className="dashboard-container">
            {/* <Nav/> */}
@@ -22,9 +30,9 @@ function Dashboard(){
         <div className="dashboard">
             <div className="side-nav">
                 <div>
-                    <img src={pic}/>
-                    <h3 className="ca-name inter-sb">Jane Doe</h3>
-                    <p className="Total-points dim inter-r">1389 Points</p>
+                      <img src={user.photoUrl}/>
+                    <h3 className="ca-name inter-sb">{ambassador.name}</h3>
+                    <p className="Total-points dim inter-r">{ambassador.points} Points</p>
                 </div>
                 <ul className="db-links dashboard-ul">
                    <a><Link to={`/Dashboard/Referals`}> <button className="inter-sb"id="Referals"><p> <img src={referalImg} alt="img"/> Referals</p></button></Link></a>
